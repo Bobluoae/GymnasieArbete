@@ -1,0 +1,152 @@
+a{ /* Det här tar bort understrek från texter. */
+text-decoration:none;
+}
+
+*{ /* Det här sätter en box runtom alla classer och id. */
+box-sizing:border-box;
+}
+
+body{ /* Det här är koden som bestämer hur text ska se ut, och hur backgrunden kommer at se ut. */
+background-image:url("../bilder/mine.jpg");
+background-position:center;
+font-family:Arial, Helvetica, sans-serif;
+font-size:16px;
+line-height:1.6em;
+margin:0;
+padding-right:12%;
+padding-left:12%;
+}
+
+#inloggning { /* kod för rutan inom "Log in or create account". */
+background-color:white;
+text-align: center;
+padding: 50px;
+}
+
+
+.container{ /* kod som får allting som har classen contaier att se finare ut på hemsidan. */
+width:80%;
+margin:auto;
+overflow:hidden;
+}
+
+#showcase{ /* koden som fixar mitten delen av alla sidorna, förutom "Log in or create account". */
+color:black;
+background-color:white;
+min-height:450px;
+}
+
+#main-header { /* kod som fixar bilden som finns bacom "home" knappen. */
+background-image:url('../bilder/Blue.png');
+background-position:center;
+text-align: center;
+}
+
+#navbar{ /* kod som fixar hur "navbar" kommer at se ut. */
+text-align:center;
+background-color:#000000;
+color:#fff;
+}
+
+#navbar ul{ /* kod som gör så att texten i "navbar" är centrerad. */
+list-style: none;
+}
+
+#navbar li{ /* kod som gör så att texten i "navbar" är brevid varanda istället för på varandra. */
+display:inline;
+}
+
+#navbar a{ /* Kod som bestämmer hur texten i "navbar" kommer att se ut. */
+color:#fff;
+text-decoration: none;
+font-size:18px;
+padding:20px 10px;
+}
+
+#navbar a:hover{ /* kod som gör så att när han håller musen över texten som befinner sig i navbaren, så blir det en blå box runtom texten. */
+background:#04B4AE;
+color:#000000;
+}
+
+#main-footer{ /* koden som fixar strukturen för fottern på hemsidan. */
+background:#1C1C1C;
+color:#fff;
+text-align: center;
+padding:20px;
+}
+
+#box{ /* koden som gör så att "Log in r create account" har en box runtom sin text. */
+text-align: center;
+border: 2px solid black;
+background: yellow;
+margin: 10px;
+padding: 10px;
+width: 40%;
+height: 300px;
+}
+
+#map_list{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+#map_placeholder { /* Temporär kod som gör en ruta där kartan ska ligga. */
+border: 1px solid black;
+background: pink;
+margin: 10px;
+width: 40%;
+height: 300px;
+}
+
+#list{ /* Koden som visar listan där alla de inskriva resturangerna finns. */
+border: 1px solid black;
+background: pink;
+margin: 10px;
+width: 20%;
+height: 300px;
+}
+
+#map_edit{
+border: 1px solid black;
+background: orange;
+margin: 10px;
+width: 40%;
+height: 300px;
+}
+
+#list_edit{ /* Kod för listan för sparade resturanger, som man också kommer kunna lägga till och ta bort resturanger. */
+border: 1px solid black;
+background: orange;
+margin: 10px;
+width: 20%;
+height: 300px;
+}
+
+.circle { /* Kod som gör så det "Home" knappen är inuti en cirkel */
+width: 150px;
+height: 100px;
+line-height: 45px;
+border-radius: 50px;
+font-size: 20px;
+color: #fff;
+background: white;
+}
+
+#coolid{ /* Kod som gör så att cirkel befinner sig i mitten av "main-header". */
+margin:10px;
+display: flex;
+justify-content: center;
+}
+
+#center{ /* kod som gör så att texten "Choosen Restaurants", "Edit Restaurants", "Inlogg" och "Randomize här" befinner sig i mitten av Showcase. */
+display:flex;
+justify-content:center;
+}
+
+@media screen and(max-width:900px){
+#main{
+width:100%;
+float:none;
+ }
+}
