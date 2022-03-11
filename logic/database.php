@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "password";
+$servername = "hemdatorn.hopto.org";
+$username = "restrand";
+$password = "HemData531";
 
 // Create connection to database server
-$db = new mysqli($servername, $username, $password, "restaurang_randomizer");
+$db = new mysqli($servername, $username, $password, "restrand");

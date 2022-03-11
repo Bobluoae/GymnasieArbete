@@ -15,7 +15,7 @@
    <div class="container">
     <div id="coolid">
    	 <div class="circle">
-      <h1><a href="http://localhost:8080/gymnasiearbete_2021-11-25/">Home</a></h1>
+      <h1><a href="/">Home</a></h1>
      </div>     
     </div>
    </div>
