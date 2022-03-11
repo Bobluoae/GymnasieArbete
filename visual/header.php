@@ -15,7 +15,7 @@
    <div class="container">
     <div id="coolid">
    	 <div class="circle">
-      <h1><a href="/">Home</a></h1>
+      <h1><a href="index.php">Home</a></h1>
      </div>     
     </div>
    </div>
