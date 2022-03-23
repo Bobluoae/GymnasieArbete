@@ -3,18 +3,11 @@ session_start();
 include "logic/database.php";
 //log a user in
 include "logic/inloggning.php";
-
-
-//log out a user
-
-
-
+include "logic/reg.php";
 //add restaurant
 
 
-
 //remove restaurant
-
 
 
 if (!isset($_GET["page"])) {
@@ -33,6 +26,12 @@ else if($_GET["page"]=="randomize"){
 } 
 else if($_GET["page"]=="inlogg"){
 	include "visual/pages/inlogg.php"; 
+}
+else if($_GET["page"]=="regpage"){
+	include "visual/pages/regform.php"; 
+}
+else if($_GET["page"]=="welcome"){
+	include "visual/pages/welcome.php"; 
 } else
 include "visual/pages/home.php";
 include "visual/footer.php";
