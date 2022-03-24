@@ -1,5 +1,4 @@
 <?php 
-$error = false;
 if(isset($_POST["inlogg_skickat"])){
 
 	$sql = "SELECT * FROM users WHERE password = '" . sha1($_POST['password']) .
@@ -19,15 +18,7 @@ if(isset($_POST["inlogg_skickat"])){
 	}
 }
 
-
 if (isset($_POST["utlogg_skickat"])) {
 
 	unset($_SESSION["isLoggedIn"]);
-	//Eller;
-	//session_destroy();
-	//header("location: http://localhost:8080/exercises/cookies_n_sessions/inlogg.php");
 }
-	// if ($_POST["username"] == "Agent46" && $_POST["password"] == "ThisIsNotAPassword") {
-		
-	// 	$_SESSION["isLoggedIn"] = true;
-	// }

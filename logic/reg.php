@@ -1,7 +1,5 @@
 <?php 
-$error = false;
 if(isset($_POST["reg_skickat"])){
-
 
 	if ($_POST["username"] == "" || $_POST["password"] == "") {
 		$error = true;
@@ -19,6 +17,15 @@ if(isset($_POST["reg_skickat"])){
 		$message = "Det här användarnamnet är redan taget!";
 	}
 
+	if (strlen($_POST['password']) <= 4) {
+		$error = true;
+		$message = "Du måste ha minst 5 karaktärer i ditt lösenord.";
+	}
+
+	if (strlen($_POST['username']) <= 2) {
+		$error = true;
+		$message = "Du måste ha minst 3 karaktärer i ditt användarnamn.";
+	}
 
 	if ($error == false) {
 		$sql = "INSERT INTO users SET password = '" . sha1($_POST['password']) .
@@ -31,19 +38,3 @@ if(isset($_POST["reg_skickat"])){
 	}
 
 }
-
-
-
-
-
-
-	// if ($query->num_rows == 1) {
-	// 	// output data of each row
- //  		while($results = $query->fetch_assoc()) {
- //    		$_SESSION["username"] = $results["name"];
- //    	} 
-
-	// 	$_SESSION["isLoggedIn"] = true;
-	// } else {
-	// 	$error = true;
-	// }

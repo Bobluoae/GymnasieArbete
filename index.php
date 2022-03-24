@@ -2,6 +2,8 @@
 session_start();
 include "logic/database.php";
 //log a user in
+$error = false;
+
 include "logic/inloggning.php";
 include "logic/reg.php";
 //add restaurant
