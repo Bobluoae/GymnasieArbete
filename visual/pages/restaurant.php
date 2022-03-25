@@ -1,24 +1,25 @@
 <!--kod som visar vilka resturanger man har valt-->
 <section id="showcase">
   <div class="container">
-    <div id="center">
-     <h1>
+    <div id="resturant-box">
+
+     <h1 id="resturant-text">
       Edit Restaurants
      </h1>
-    </div>
 
     <div id="map_list">
      <div id="map_edit">Map</div>
 
      <div id="list_edit">
-      <input type="text" id="restinput">
+      <input placeholder="Type ur resturant here!" type="text" name="errorMessage" id="restinput">
+      <p id="error"></p>
+      <br>
        <button id="add" onclick="addToArray()">Add</button>
       <p id="listArray"></p>
      <button id="reset" onclick="clearAll()">clear list</button>
      </div>
-     
-     <p id="error"></p>
 
+     </div>
     </div>
   </div>
 </section>

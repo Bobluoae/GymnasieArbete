@@ -7,8 +7,7 @@ box-sizing:border-box;
 }
 
 body{ /* Det här är koden som bestämer hur text ska se ut, och hur backgrunden kommer at se ut. */
-background-image:url("../bilder/mine.jpg");
-background-position:center;
+background-color: rgba(255, 0, 255);
 font-family:Arial, Helvetica, sans-serif;
 font-size:16px;
 line-height:1.6em;
@@ -69,44 +68,6 @@ text-align: center;
 padding:20px;
 }
 
-#map_list{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-}
-
-#map_placeholder { /* Temporär kod som gör en ruta där kartan ska ligga. */
-border: 1px solid black;
-background: pink;
-margin: 10px;
-width: 40%;
-height: 300px;
-}
-
-#list{ /* Koden som visar listan där alla de inskriva resturangerna finns. */
-border: 1px solid black;
-background: pink;
-margin: 10px;
-width: 20%;
-height: 300px;
-}
-
-#map_edit{
-border: 1px solid black;
-background: orange;
-margin: 10px;
-width: 40%;
-height: 300px;
-}
-
-#list_edit{ /* Kod för listan för sparade resturanger, som man också kommer kunna lägga till och ta bort resturanger. */
-border: 1px solid black;
-background: orange;
-margin: 10px;
-width: 20%;
-height: 300px;
-}
-
 .circle { /* Kod som gör så det "Home" knappen är inuti en cirkel */
 width: 150px;
 height: 100px;
@@ -153,17 +114,97 @@ color: white;
 
 #username-password-input{/* Css code for the username and password input boxes on the login page */
 border-radius: 5px;
-color: white;
+color: black;
 background-color: rgba(210, 210, 210);
 }
+/* ////////// End of login page code ////////// */
 
-#register-link{/* Css code for the register link on the login page */
+/* ////////// Css code for the websites resturant pages ////////// */
+#resturant-box{/* Code for the grey box on "Choosen/Edit Restaurants" pages */
+border: 2px solid black;
+background: rgba(40, 40, 40, 0.9);
+min-width: 1000px;
+height: 450px;
+border-radius: 20px;
+text-align: center;
 color: white;
 }
-/* ////////// End of login page code ////////// */
-#restinput{
-	width: 100px;
+
+#map_list{/* Code that makes the blue boxes on "Choosen/Edit Restaurants" go besides eachoter */
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 }
+
+#map_placeholder{/* Code for the box to the left on the "Choosen Restaurants" page */
+border-radius: 5px;
+border: 2px solid black;
+text-align: center;
+background: rgba(23, 0, 255, 0.2);
+margin: 20px;
+width: 40%;
+height: 300px;
+color: white;
+}
+
+#list{/* Code for the box to the right side on the "Choosen Restaurants" page */
+border-radius: 5px;
+border: 2px solid black;
+text-align: center;
+background: rgba(23, 0, 255, 0.2);
+width: 40%;
+margin: 20px;
+height: 300px;
+color: white;
+}
+
+#map_edit{/* Code for the box to the left on the "Edit Restaurants" page */
+border-radius: 5px;
+border: 2px solid black;
+text-align: center;
+background: rgba(23, 0, 255, 0.2);
+margin: 20px;
+width: 40%;
+height: 300px;
+color: white;
+}
+
+#list_edit{/* Code for the box to the right side on the "Edit Restaurants" page */
+border-radius: 5px;
+border: 2px solid black;
+text-align: center;
+background: rgba(23, 0, 255, 0.2);
+width: 40%;
+margin: 20px;
+height: 300px;
+color: white;
+}
+
+#restinput{/* Code for the user resturant input on the "Edit Restaurants" page */
+text-align: center;
+width: 200px;
+border-radius: 5px;
+color: black;
+background-color: rgba(210, 210, 210);
+margin: 10px;
+}
+
+#add{/* Code for the add button on the "Edit Restaurants" page */
+color: white;
+background: rgba(52, 52, 52);
+border-radius: 5px;
+}
+
+#reset{/* Code for the clear button on the "Edit Restaurants" page */
+color: white;
+background: rgba(52, 52, 52);
+border-radius: 5px;
+}
+
+#error{/* Code that makes the error message that pops up on "Edit Restaurants" page to turn red */
+color: rgba(255, 0, 0);
+}
+/* ////////// End of resturant page code ////////// */
 
 @media screen and(max-width:900px){
 #main{
