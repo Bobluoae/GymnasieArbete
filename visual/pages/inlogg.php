@@ -20,7 +20,7 @@
 					<br>
 					<a id="username-password-register-inlog-text" href="?page=regpage">Registrera ett konto</a>
 				<?php } else { ?>
-					<h2>Hej, <?=$_SESSION["username"]?>!</h2>
+					<h2 style="color: white">Hej, <?=$_SESSION["username"]?>!</h2>
 					<form method="POST">
 						<input type="hidden" name="utlogg_skickat">
 						<input id="logg-in-ut" type="submit" name="logga_ut" value="Logga ut">
