@@ -1,14 +1,14 @@
  <section id="showcase">
 	<div class="container">
 		<div id="center">
-			<div id="box">
-				<h1>
+			<div id="login-box">
+				<h1 id="username-password-register-inlog-text">
 						Välkommen
 				</h1>
 
-				<p>Du har nu registrerat ett konto! Wow!</p>
+				<p id="username-password-register-inlog-text">Du har nu registrerat ett konto! Wow!</p>
 
-				<a href="index.php">Gå till Hem</a>
+				<a id="username-password-register-inlog-text" href="index.php">Gå till Hem</a>
 
 			</div>
 		</div>

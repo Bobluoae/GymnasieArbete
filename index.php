@@ -22,6 +22,7 @@ if ($_GET["page"]=="info") {
 } 
 else if($_GET["page"]=="restaurant"){
 	include "visual/pages/restaurant.php"; 
+	include "script/js_list.js"; 
 } 
 else if($_GET["page"]=="randomize"){
 	include "visual/pages/randomize.php"; 

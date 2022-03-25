@@ -13,16 +13,9 @@ font-family:Arial, Helvetica, sans-serif;
 font-size:16px;
 line-height:1.6em;
 margin:0;
-padding-right:12%;
-padding-left:12%;
+padding-right:8%;
+padding-left:8%;
 }
-
-#inloggning { /* kod för rutan inom "Log in or create account". */
-background-color:white;
-text-align: center;
-padding: 50px;
-}
-
 
 .container{ /* kod som får allting som har classen contaier att se finare ut på hemsidan. */
 width:80%;
@@ -31,9 +24,10 @@ overflow:hidden;
 }
 
 #showcase{ /* koden som fixar mitten delen av alla sidorna, förutom "Log in or create account". */
-color:black;
-background-color:white;
-min-height:450px;
+background-image: url("../bilder/Hexagon.jpg");
+background-position: center;
+padding-top: 25px;
+padding-bottom: 25px;
 }
 
 #main-header { /* kod som fixar bilden som finns bacom "home" knappen. */
@@ -73,16 +67,6 @@ background:#1C1C1C;
 color:#fff;
 text-align: center;
 padding:20px;
-}
-
-#box{ /* koden som gör så att "Log in r create account" har en box runtom sin text. */
-text-align: center;
-border: 2px solid black;
-background: yellow;
-margin: 10px;
-padding: 10px;
-width: 40%;
-height: 300px;
 }
 
 #map_list{
@@ -142,6 +126,43 @@ justify-content: center;
 #center{ /* kod som gör så att texten "Choosen Restaurants", "Edit Restaurants", "Inlogg" och "Randomize här" befinner sig i mitten av Showcase. */
 display:flex;
 justify-content:center;
+}
+
+/* ////////// Css code for the websites login page ////////// */
+#login-box{ /* koden som gör så att "Log in r create account" har en box runtom sin text. */
+text-align: center;
+border: 2px solid black;
+background: rgba(40, 40, 40, 0.9);
+margin: 10px;
+padding: 10px;
+width: 40%;
+min-width: 300px;
+height: 300px;
+border-radius: 20px;
+}
+
+#logg-in-ut{/* Css code for the "log-in" and "log-out" button on the login page */
+color: white;
+background: rgba(52, 52, 52);
+border-radius: 5px;
+}
+
+#username-password-register-inlog-text{/* Css code for the username, password and register text on the login page */
+color: white;
+}
+
+#username-password-input{/* Css code for the username and password input boxes on the login page */
+border-radius: 5px;
+color: white;
+background-color: rgba(210, 210, 210);
+}
+
+#register-link{/* Css code for the register link on the login page */
+color: white;
+}
+/* ////////// End of login page code ////////// */
+#restinput{
+	width: 100px;
 }
 
 @media screen and(max-width:900px){

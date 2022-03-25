@@ -1,8 +1,8 @@
  <section id="showcase">
 	<div class="container">
 		<div id="center">
-			<div id="box">
-				<h1>
+			<div id="login-box">
+				<h1 id="username-password-register-inlog-text">
 						INLOGG
 				</h1>
 				<?php if (!isset($_SESSION["isLoggedIn"])) {  
@@ -11,19 +11,19 @@
 					} ?>
 					<form method="POST">
 						<input type="hidden" name="inlogg_skickat">
-						<label>Användarnamn</label><br>
-						<input type="text" name="username"><br>
-						<label>Lösenord</label><br>
-						<input type="password" name="password"><br>
-						<input type="submit" name="logga_in" value="Logga in"><br>
+						<label id="username-password-register-inlog-text">Användarnamn</label><br>
+						<input id="username-password-input" type="text" name="username"><br>
+						<label id="username-password-register-inlog-text">Lösenord</label><br>
+						<input id="username-password-input" type="password" name="password"><br>
+						<input id="logg-in-ut" type="submit" name="logga_in" value="Logga in"><br>
 					</form>
 					<br>
-					<a href="?page=regpage">Registrera ett konto</a>
+					<a id="username-password-register-inlog-text" href="?page=regpage">Registrera ett konto</a>
 				<?php } else { ?>
 					<h2>Hej, <?=$_SESSION["username"]?>!</h2>
 					<form method="POST">
 						<input type="hidden" name="utlogg_skickat">
-						<input type="submit" name="logga_ut" value="Logga ut">
+						<input id="logg-in-ut" type="submit" name="logga_ut" value="Logga ut">
 					</form>
 
 				<?php } ?>
