@@ -7,7 +7,8 @@ box-sizing:border-box;
 }
 
 body{ /* Det här är koden som bestämer hur text ska se ut, och hur backgrunden kommer at se ut. */
-background-color: rgba(255, 0, 255);
+background-image: url("../bilder/Website_background.png");
+background-position: center;
 font-family:Arial, Helvetica, sans-serif;
 font-size:16px;
 line-height:1.6em;
@@ -23,7 +24,7 @@ overflow:hidden;
 }
 
 #showcase{ /* koden som fixar mitten delen av alla sidorna, förutom "Log in or create account". */
-background-image: url("../bilder/Hexagon.jpg");
+background-image: url("../bilder/Website_background.png");
 background-position: center;
 padding-top: 25px;
 padding-bottom: 25px;
@@ -31,35 +32,30 @@ padding-bottom: 25px;
 
 #main-header { /* kod som fixar bilden som finns bacom "home" knappen. */
 background-image:url('../bilder/Blue.png');
-background-position:center;
+background-position: center;
 text-align: center;
 }
 
-#navbar{ /* kod som fixar hur "navbar" kommer at se ut. */
-text-align:center;
-background-color:#000000;
-color:#fff;
+/* ////////// Css code for the websites lavbar ////////// */
+#navbar{ /* Code for the navbar box */
+text-align: center;
+background-color: #000000;
 }
 
-#navbar ul{ /* kod som gör så att texten i "navbar" är centrerad. */
-list-style: none;
-}
-
-#navbar li{ /* kod som gör så att texten i "navbar" är brevid varanda istället för på varandra. */
-display:inline;
-}
-
-#navbar a{ /* Kod som bestämmer hur texten i "navbar" kommer att se ut. */
-color:#fff;
+#navbar a{ /* Code for the text and teh area around it */
 text-decoration: none;
-font-size:18px;
-padding:20px 10px;
+color: lightgrey;
+font-size: 18px;
+padding: 10px 10px;
 }
 
-#navbar a:hover{ /* kod som gör så att när han håller musen över texten som befinner sig i navbaren, så blir det en blå box runtom texten. */
-background:#04B4AE;
-color:#000000;
+#navbar a:hover{ /* Code that changes text and the area around it when a mouse hovers over it  */
+text-decoration: underline;
+color: white;
+border-radius: 20px;
+cursor: pointer;
 }
+/* ////////// End of navbar code ////////// */
 
 #main-footer{ /* koden som fixar strukturen för fottern på hemsidan. */
 background:#1C1C1C;
@@ -106,16 +102,32 @@ border-radius: 20px;
 color: white;
 background: rgba(52, 52, 52);
 border-radius: 5px;
+cursor: pointer;
 }
 
-#username-password-register-inlog-text{/* Css code for the username, password and register text on the login page */
+#username-password-inlog-text{/* Css code for the username, password and register text on the login page */
 color: white;
+}
+
+#register-link{
+color: lightgrey;
+}
+
+#register-link:hover{
+color: white;
+text-decoration: underline;
 }
 
 #username-password-input{/* Css code for the username and password input boxes on the login page */
 border-radius: 5px;
 color: black;
 background-color: rgba(210, 210, 210);
+}
+
+#gay-error{
+color: red;
+text-align: center;
+font-size: 15px;
 }
 /* ////////// End of login page code ////////// */
 
@@ -193,12 +205,14 @@ margin: 10px;
 color: white;
 background: rgba(52, 52, 52);
 border-radius: 5px;
+cursor: pointer;
 }
 
 #reset{/* Code for the clear button on the "Edit Restaurants" page */
 color: white;
 background: rgba(52, 52, 52);
 border-radius: 5px;
+cursor: pointer;
 }
 
 #error{/* Code that makes the error message that pops up on "Edit Restaurants" page to turn red */

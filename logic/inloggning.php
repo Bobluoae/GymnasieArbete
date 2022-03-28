@@ -10,7 +10,6 @@ if(isset($_POST["inlogg_skickat"])){
 		// output data of each row
   		while($results = $query->fetch_assoc()) {
     		$_SESSION["username"] = $results["name"];
-    		$_SESSION["user_id"] = $results["id"];
     	} 
 
 		$_SESSION["isLoggedIn"] = true;

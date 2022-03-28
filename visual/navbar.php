@@ -2,8 +2,6 @@
  <nav id="navbar"> 
   <div class="container">
    <ul>
-    <li><a href="index.php?page=restaurant">Pick Restaurants</a></li>
-     <li><a href="">Randomize</a></li>
 
     <li>
     	<a href="index.php?page=inlogg">

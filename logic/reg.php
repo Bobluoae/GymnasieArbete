@@ -14,17 +14,17 @@ if(isset($_POST["reg_skickat"])){
 	//hittade en rad i db med användarnamnet
 	if (mysqli_num_rows($query)) {
 		$error = true;
-		$message = "Det här användarnamnet är redan taget!";
+		$message = "Det här användarnamnet är redan taget";
 	}
 
 	if (strlen($_POST['password']) <= 4) {
 		$error = true;
-		$message = "Du måste ha minst 5 karaktärer i ditt lösenord.";
+		$message = "Du måste ha minst 5 karaktärer i ditt lösenord";
 	}
 
 	if (strlen($_POST['username']) <= 2) {
 		$error = true;
-		$message = "Du måste ha minst 3 karaktärer i ditt användarnamn.";
+		$message = "Du måste ha minst 3 karaktärer i ditt användarnamn";
 	}
 
 	if ($error == false) {
