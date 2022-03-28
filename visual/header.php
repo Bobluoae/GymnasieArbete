@@ -3,7 +3,7 @@
 <html>
 
  <head>
-  <title> Stand in - Home </title>
+  <title>Gymnasiearbete</title>
   <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
  </head>
 

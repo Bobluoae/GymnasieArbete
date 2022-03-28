@@ -3,7 +3,7 @@
 		<div id="center">
 			<div id="login-box">
 				<h1 id="username-password-inlog-text">
-						Registrera Konto
+						Register an account
 				</h1>
 				<?php if (!isset($_SESSION["isLoggedIn"])) {  
 					if ($error == true) {
@@ -11,19 +11,18 @@
 					} ?>
 					<form method="POST">
 						<input type="hidden" name="reg_skickat">
-						<label id="username-password-inlog-text">Användarnamn</label><br>
+						<label id="username-password-inlog-text">Username</label><br>
 						<input id="username-password-input" type="text" name="username"><br>
-						<label id="username-password-inlog-text">Lösenord</label><br>
+						<label id="username-password-inlog-text">Password</label><br>
 						<input id="username-password-input" type="password" name="password"><br>
-						<label id="username-password-inlog-text">
-						Comfirm password</label><br>
-						<input id="username-password-input" type="password" name="password"><br>
+						<label id="username-password-inlog-text">Comfirm password</label><br>
+						<input id="username-password-input" type="password" name="confirm_password"><br>
 						<input id="logg-in-ut" type="submit" name="register" value="Registrera"><br>
 					</form>
 				<?php } else { ?>
-					<h2>Hej, <?=$_SESSION["username"]?>! Du borde inte vara här</h2>
+					<h2 id='gay-error'>Hello, <?=$_SESSION["username"]?>! You should not be here...</h2>
 					<br>
-					<a href="?page=regpage">Registrera ett konto</a>
+					<a href="?page=regpage">Register an account</a>
 				<?php } ?>
 			</div>
 		</div>

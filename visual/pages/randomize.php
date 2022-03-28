@@ -4,7 +4,7 @@
 	  	<div id="center">
 		  	<div id="randomize_box">
 			   <h1>
-			 		Randomize här
+			 		Om du ser det här är du gay.
 			   </h1>
 		   </div>
 	   </div>
