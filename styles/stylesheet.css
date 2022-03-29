@@ -31,7 +31,7 @@ padding-bottom: 25px;
 }
 
 #main-header { /* kod som fixar bilden som finns bacom "home" knappen. */
-background-image:url('../bilder/Blue.png');
+background-image:url('../bilder/Website_background.png');
 background-position: center;
 text-align: center;
 }
@@ -216,6 +216,10 @@ cursor: pointer;
 }
 
 #error{/* Code that makes the error message that pops up on "Edit Restaurants" page to turn red */
+color: rgba(255, 0, 0);
+}
+
+.error2::-webkit-input-placeholder{
 color: rgba(255, 0, 0);
 }
 /* ////////// End of resturant page code ////////// */

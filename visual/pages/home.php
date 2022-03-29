@@ -12,8 +12,6 @@
 
      <div id="list_edit">
       <input placeholder="Type ur resturant here!" type="text" name="errorMessage" id="restinput">
-      <p id="error"></p>
-      <br>
        <button id="add" onclick="addToArray()">Add</button>
       <p id="listArray"></p>
      <button id="reset" onclick="clearAll()">clear list</button>
