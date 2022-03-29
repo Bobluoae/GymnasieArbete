@@ -12,7 +12,6 @@ include "logic/reg.php";
 //remove restaurant
 
 
-
 if (!isset($_GET["page"])) {
     $_GET["page"] = "";
 }

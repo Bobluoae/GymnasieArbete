@@ -9,7 +9,8 @@ var arrayInput = document.getElementById('restinput');
 function addToArray() {
     var p = document.getElementById('restinput').value;
     if (p == "") {
-        document.getElementById('error').innerHTML = "Make sure to put in a restaurant!"
+        $('input:text').attr('placeholder','Make sure to give resturant!');
+        $('input').addClass('error2');
         return false;
     } else {
     var temp = document.getElementById('restinput').value;
@@ -20,11 +21,13 @@ function addToArray() {
 
     if (x >= 1){
 	$('#reset').show();
-	document.getElementById('error').innerHTML = "";
-	display += array;
-    display += "<br>";
+	$('input:text').attr('placeholder','Type ur resturant here!');
+    $('input').removeClass('error2');
 	}
-document.getElementById("listArray").innerHTML =  display;
+
+    let finalArray  = array.join('<br>');
+
+document.getElementById("listArray").innerHTML =  finalArray;
 }
 
 
