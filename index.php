@@ -30,6 +30,5 @@ else if($_GET["page"]=="welcome"){
 	include "visual/pages/welcome.php"; 
 } else
 include "visual/pages/home.php";
-include "script/js_list.js";
 include "visual/footer.php";
 
