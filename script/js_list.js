@@ -1,4 +1,3 @@
-<script>
 const array = new Array();
 let x = 0;
 let y = 0;
@@ -24,12 +23,13 @@ function addToArray() {
     }
 
     if(y > 0){
-        clearAll();
+        document.getElementById('winner').innerHTML = "";
     }
 
     if (x >= 1){
 	$('#reset').show();
     $('#random').show();
+    $('#skola').hide();
 	$('input:text').attr('placeholder','Type ur resturant here!');
     $('input').removeClass('error2');
 	}
@@ -47,6 +47,7 @@ function clearAll()
     y = 0;
     $('#reset').hide();
     $('#random').hide();
+    $('#skola').show();
     document.getElementById('restinput').value = "";
     document.getElementById('listArray').innerHTML = "";
     document.getElementById('winner').innerHTML = "";
@@ -68,5 +69,3 @@ function skolas(){
         y++
     }
 }
-
-</script>
