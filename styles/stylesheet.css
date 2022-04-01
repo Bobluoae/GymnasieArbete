@@ -208,6 +208,13 @@ border-radius: 5px;
 cursor: pointer;
 }
 
+#skola{
+color: white;
+background: rgba(52, 52, 52);
+border-radius: 5px;
+cursor: pointer;
+}
+
 #reset{/* Code for the clear button on the "Edit Restaurants" page */
 color: white;
 background: rgba(52, 52, 52);

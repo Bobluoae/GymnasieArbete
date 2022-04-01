@@ -9,10 +9,12 @@
 
     <div id="map_list">
      <div id="map_edit">Map</div>
-
+     <button id="random" onclick="picker()">Get a restaurant</button>
+     <p id="winner"></p>
      <div id="list_edit">
       <input placeholder="Type ur resturant here!" type="text" name="errorMessage" id="restinput">
        <button id="add" onclick="addToArray()">Add</button>
+       <button id="skola" onclick="skolas()">skola</button>
       <p id="listArray"></p>
      <button id="reset" onclick="clearAll()">clear list</button>
      </div>
