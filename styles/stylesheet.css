@@ -17,26 +17,39 @@ padding-right:8%;
 padding-left:8%;
 }
 
-.container{ /* kod som får allting som har classen contaier att se finare ut på hemsidan. */
+/* ////////// Css code for things on every page ////////// */
+.container{ /* Css code for everything on the website that makes it look a little big better */
 width:80%;
 margin:auto;
 overflow:hidden;
 }
 
-#showcase{ /* koden som fixar mitten delen av alla sidorna, förutom "Log in or create account". */
+#showcase{ /* Css code for the area behind all the pages in the middle */
 background-image: url("../bilder/Website_background.png");
 background-position: center;
 padding-top: 25px;
 padding-bottom: 25px;
 }
 
-#main-header { /* kod som fixar bilden som finns bacom "home" knappen. */
+#main-header { /* Css code for the area behind the "home" text */
 background-image:url('../bilder/Website_background.png');
 background-position: center;
 text-align: center;
 }
 
-/* ////////// Css code for the websites lavbar ////////// */
+#main-footer{/* Css code for the footer that appears on all the pages */
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: black;
+color: white;
+text-align: center;
+}
+/* ////////// End of all page code ////////// */
+
+
+/* ////////// Css code for the websites navbar ////////// */
 #navbar{ /* Code for the navbar box */
 text-align: center;
 background-color: #000000;
@@ -57,12 +70,7 @@ cursor: pointer;
 }
 /* ////////// End of navbar code ////////// */
 
-#main-footer{ /* koden som fixar strukturen för fottern på hemsidan. */
-background:#1C1C1C;
-color:#fff;
-text-align: center;
-padding:20px;
-}
+
 
 .circle { /* Kod som gör så det "Home" knappen är inuti en cirkel */
 width: 150px;
@@ -80,12 +88,12 @@ display: flex;
 justify-content: center;
 }
 
-#center{ /* kod som gör så att texten "Choosen Restaurants", "Edit Restaurants", "Inlogg" och "Randomize här" befinner sig i mitten av Showcase. */
-display:flex;
-justify-content:center;
+/* ////////// Css code for the websites login page ////////// */
+#center{
+display: flex;
+justify-content: center;
 }
 
-/* ////////// Css code for the websites login page ////////// */
 #login-box{ /* koden som gör så att "Log in r create account" har en box runtom sin text. */
 text-align: center;
 border: 2px solid black;
@@ -109,11 +117,11 @@ cursor: pointer;
 color: white;
 }
 
-#register-link{
+#register-link{/* Css code for the "register an account" text on the login page */
 color: lightgrey;
 }
 
-#register-link:hover{
+#register-link:hover{/* Css code for the "register an account" text on the login page */
 color: white;
 text-decoration: underline;
 }
@@ -124,18 +132,20 @@ color: black;
 background-color: rgba(210, 210, 210);
 }
 
-#gay-error{
+#gay-error{/* Css code for the error message on the login page */
 color: red;
 text-align: center;
 font-size: 15px;
 }
 /* ////////// End of login page code ////////// */
 
+
+
 /* ////////// Css code for the websites resturant pages ////////// */
 #resturant-box{/* Code for the grey box on "Choosen/Edit Restaurants" pages */
 border: 2px solid black;
 background: rgba(40, 40, 40, 0.9);
-min-width: 1000px;
+width: 100%;
 height: 450px;
 border-radius: 20px;
 text-align: center;
@@ -144,19 +154,8 @@ color: white;
 
 #map_list{/* Code that makes the blue boxes on "Choosen/Edit Restaurants" go besides eachoter */
 display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-}
-
-#map_placeholder{/* Code for the box to the left on the "Choosen Restaurants" page */
-border-radius: 5px;
-border: 2px solid black;
-text-align: center;
-background: rgba(23, 0, 255, 0.2);
-margin: 20px;
-width: 40%;
-height: 300px;
-color: white;
+justify-content: center;
+flex: wrap;
 }
 
 #list{/* Code for the box to the right side on the "Choosen Restaurants" page */
@@ -182,11 +181,11 @@ color: white;
 }
 
 #list_edit{/* Code for the box to the right side on the "Edit Restaurants" page */
-border-radius: 5px;
+border-radius: 8px;
 border: 2px solid black;
 text-align: center;
 background: rgba(23, 0, 255, 0.2);
-width: 40%;
+width: 50%;
 margin: 20px;
 height: 300px;
 color: white;
@@ -230,6 +229,8 @@ color: rgba(255, 0, 0);
 color: rgba(255, 0, 0);
 }
 /* ////////// End of resturant page code ////////// */
+
+
 
 @media screen and(max-width:900px){
 #main{

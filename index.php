@@ -23,15 +23,16 @@ if ($_GET["page"]=="info") {
 else if($_GET["page"]=="inlogg"){
 	include "visual/pages/inlogg.php"; 
 }
+else if($_GET["page"]=="random"){
+	include "visual/pages/randomizer.php"; 
+}
 else if($_GET["page"]=="regpage"){
 	include "visual/pages/regform.php"; 
-}
-else if($_GET["page"]=="list"){
-	include "visual/pages/list.php"; 
 }
 else if($_GET["page"]=="welcome"){
 	include "visual/pages/welcome.php"; 
 } else
 include "visual/pages/home.php";
+include "script/js_list.js";
 include "visual/footer.php";
 
