@@ -4,8 +4,9 @@ include "logic/database.php";
 //log a user in
 $error = false;
 
-include "logic/inloggning.php";
 include "logic/reg.php";
+include "logic/inloggning.php";
+
 //add restaurant
 
 
