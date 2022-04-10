@@ -10,11 +10,11 @@
      <p id="winner"></p>
      <div id="list_edit">
       <select name="cars" id="cars">
-  <option value="test 1">Test 1</option>
-  <option value="test 2">Test 2</option>
-  <option value="test 3">Test 3</option>
-  <option value="test 4">Test 4</option>
-</select>
+        <option value="test 1">Test 1</option>
+        <option value="test 2">Test 2</option>
+        <option value="test 3">Test 3</option>
+        <option value="test 4">Test 4</option>
+      </select>
       <button id="random" onclick="picker()">Get a restaurant</button>
        <button id="skola" onclick="skolas()">skola</button>
             <p id="winner"></p>
@@ -24,12 +24,3 @@
      </div>
     </div>
   </div>
-
-<script 
-type="text/javascript"
-src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
-</script>
-<script 
-type="text/javascript"
-src="script/js_list.js">
-</script>

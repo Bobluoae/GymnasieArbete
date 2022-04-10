@@ -69,3 +69,20 @@ function skolas(){
         y++
     }
 }
+
+function saveToServer(){
+
+    const response = fetch("logic/savelist.php", {
+        method: 'POST',
+        // mode: 'cors',
+        // cache: 'no-cache',
+        // credentials: 'same-origin',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        // redirect: 'follow', 
+        // referrerPolicy: 'no-referrer',
+        body: JSON.stringify(array)
+    });
+    console.log(response)
+}
