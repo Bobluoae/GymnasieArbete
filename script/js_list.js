@@ -94,31 +94,14 @@ function saveToServer(){
     }
 
     fetch('index.php?ajax=savelist', requestObj)
-      .then(response => response.json())
-      .then(data => console.log(data));
+        .then(response => {
+            if(response.ok) return response.json();
+            throw new Error('something went wrong');
+        }).then(data => {
+            console.log(data);
+            alert("Your list is saved!")
+        }).catch((error) => {
+            console.error('Error:', error);
+            alert("Error: You need to be logged in to save a list!");
+        });
 }
-
-
-// async function saveToServer(){
-
-//     listname = prompt("Give your list a name!", "My List");
-
-//     const payload = {
-//         listname: listname,
-//         restaurants: array
-//     };
-
-//     const response = await fetch("index.php?ajax=savelist", {
-//         method: 'POST',
-//         mode: 'cors',
-//         cache: 'no-cache',
-//         credentials: 'same-origin',
-//         headers: {
-//           'Content-Type': 'application/json'
-//         },
-//         redirect: 'follow', 
-//         referrerPolicy: 'no-referrer',
-//         body: JSON.stringify(payload)
-//     });
-//     console.log(response)
-// }

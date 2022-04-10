@@ -18,8 +18,6 @@ if ($_GET["ajax"] == "savelist") {
 			$query->bindParam('2', $list_id, PDO::PARAM_INT);
 			$query->execute();
 		}
-
-		
 	} else {
 		$arr = ['message' => "ACCESS DENIED!"];
 		header("Status: 403 Forbidden");

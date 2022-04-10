@@ -24,6 +24,7 @@ if(isset($_POST["inlogg_skickat"])){
 
 if (isset($_POST["utlogg_skickat"])) {
 
-	unset($_SESSION["isLoggedIn"]);
-	unset($_SESSION["usertype"]);
+	session_destroy();
+	header("location: index.php");
+	exit();
 }
