@@ -1,4 +1,4 @@
-<?php 
+<?php
 if(isset($_POST["reg_skickat"])){
 
 	if ($_POST["username"] == "" || $_POST["password"] == "" || $_POST['confirm_password'] == "") {

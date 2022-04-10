@@ -1,4 +1,4 @@
-<?php 
+<?php
 if(isset($_POST["inlogg_skickat"])){
 
 	$name = $_POST["username"];
@@ -13,6 +13,7 @@ if(isset($_POST["inlogg_skickat"])){
 		// output data of each row
   		$results = $query->fetch(PDO::FETCH_ASSOC);
 		$_SESSION["username"] = $results["name"];
+		$_SESSION["user_id"] = $results["id"];
 		// $_SESSION["usertype"] = $results["usertype"];
 
 		$_SESSION["isLoggedIn"] = true;

@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include "logic/database.php";
 //log a user in
@@ -8,8 +8,9 @@ include "logic/reg.php";
 include "logic/inloggning.php";
 
 //add restaurant
-
-
+if (isset($_GET["ajax"])){
+	include "logic/ajax.php";
+}
 //remove restaurant
 
 

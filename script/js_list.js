@@ -70,19 +70,55 @@ function skolas(){
     }
 }
 
+
 function saveToServer(){
 
-    const response = fetch("logic/savelist.php", {
+    listname = prompt("Give your list a name!", "My List");
+
+    const payload = {
+        listname: listname,
+        restaurants: array
+    };
+
+    requestObj = {
         method: 'POST',
-        // mode: 'cors',
-        // cache: 'no-cache',
-        // credentials: 'same-origin',
+        mode: 'cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
         headers: {
           'Content-Type': 'application/json'
         },
-        // redirect: 'follow', 
-        // referrerPolicy: 'no-referrer',
-        body: JSON.stringify(array)
-    });
-    console.log(response)
+        redirect: 'follow', 
+        referrerPolicy: 'no-referrer',
+        body: JSON.stringify(payload)
+    }
+
+    fetch('index.php?ajax=savelist', requestObj)
+      .then(response => response.json())
+      .then(data => console.log(data));
 }
+
+
+// async function saveToServer(){
+
+//     listname = prompt("Give your list a name!", "My List");
+
+//     const payload = {
+//         listname: listname,
+//         restaurants: array
+//     };
+
+//     const response = await fetch("index.php?ajax=savelist", {
+//         method: 'POST',
+//         mode: 'cors',
+//         cache: 'no-cache',
+//         credentials: 'same-origin',
+//         headers: {
+//           'Content-Type': 'application/json'
+//         },
+//         redirect: 'follow', 
+//         referrerPolicy: 'no-referrer',
+//         body: JSON.stringify(payload)
+//     });
+//     console.log(response)
+// }

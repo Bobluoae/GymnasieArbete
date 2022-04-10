@@ -10,14 +10,15 @@
      <div id="list_edit">
 
 
-      <button id="createlist" onclick="">Create List</button>
+    <!--   <button id="createlist" onclick="">Create List</button> -->
       <input placeholder="Type ur resturant here!" type="text" name="errorMessage" id="restinput">
 
        
        <button id="add" onclick="addToArray()">Add</button>
-       <button id="save" onclick="saveToServer()">Save</button>
+       
       <p id="listArray"></p>
-     <button id="reset" onclick="clearAll()">clear list</button>
+     <button id="reset" onclick="clearAll()">clear list</button><br>
+     <button id="save" onclick="saveToServer()">Save</button>
      </div>
 
      </div>
