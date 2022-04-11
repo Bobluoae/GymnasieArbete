@@ -21,7 +21,8 @@ padding-left:8%;
 .container{ /* Css code for everything on the website that makes it look a little big better */
 width:80%;
 margin:auto;
-overflow:hidden;
+overflow: hidden;
+/*border: solid 1px orange;*/
 }
 
 #showcase{ /* Css code for the area behind all the pages in the middle */
@@ -146,7 +147,7 @@ font-size: 15px;
 border: 2px solid black;
 background: rgba(40, 40, 40, 0.9);
 width: 100%;
-height: 450px;
+height: auto;
 border-radius: 20px;
 text-align: center;
 color: white;
@@ -187,7 +188,7 @@ text-align: center;
 background: rgba(23, 0, 255, 0.2);
 width: 50%;
 margin: 20px;
-height: 300px;
+height: auto;
 color: white;
 }
 
@@ -230,7 +231,16 @@ color: rgba(255, 0, 0);
 }
 /* ////////// End of resturant page code ////////// */
 
-
+#winner{
+border-radius: 5px;
+border: 2px solid black;
+text-align: center;
+background: rgba(23, 0, 255, 0.2);
+margin: 20px;
+width: 40%;
+height: 100px;
+color: limegreen;
+}
 
 @media screen and(max-width:900px){
 #main{

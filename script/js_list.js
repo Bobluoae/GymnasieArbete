@@ -2,7 +2,7 @@ const array = new Array();
 let x = 0;
 let y = 0;
 $('#reset').hide();
-$('#random').hide();
+$('#random');
 const skola = ["Coffee Lounge", "Elias Sushi", "Döner Kebab", "Le Croissant",
 "Max", "Sjömanskyrkan", "Naked Juicebar", "Pizzabakeren", "Grab n Go", 
 "Sakura Sushi", "Sofia Magdalena", "Subway", "Taco Bar", "Wayne's"];
@@ -10,6 +10,7 @@ const skola = ["Coffee Lounge", "Elias Sushi", "Döner Kebab", "Le Croissant",
 
 var arrayInput = document.getElementById('restinput');
 function addToArray() {
+    arrayInput.focus();
     var p = document.getElementById('restinput').value;
     if (p == "") {
         $('input:text').attr('placeholder','Make sure to give resturant!');
@@ -50,13 +51,9 @@ function clearAll()
     $('#skola').show();
     document.getElementById('restinput').value = "";
     document.getElementById('listArray').innerHTML = "";
-    document.getElementById('winner').innerHTML = "";
 }
 
-function picker(){
-    var item = array[Math.floor(Math.random()*array.length)];
-    document.getElementById('winner').innerHTML = item;
-}
+
 
 function skolas(){
     if(x > 0){
