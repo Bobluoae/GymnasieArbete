@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST["inlogg_skickat"])){
 
-	$name = $_POST["username"];
+	htmlentities($name) = $_POST["username"];
 	$pass = sha1($_POST['password']);
 	
 	$query = $conn->prepare("SELECT * FROM users WHERE name = ? AND password = ?");

@@ -38,7 +38,7 @@ if(isset($_POST["reg_skickat"])){
 		// $usertype = "user";
 
 		$query = $conn->prepare("INSERT INTO users SET name = ?, password = ?/*, usertype = ?*/");
-		$query->bindParam('1', $name, PDO::PARAM_STR);
+		$query->bindParam('1', htmlentities($name), PDO::PARAM_STR);
 		$query->bindParam('2', $password, PDO::PARAM_STR);
 		// $query->bindParam('3', $usertype, PDO::PARAM_STR);
 		$query->execute();

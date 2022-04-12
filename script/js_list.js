@@ -18,7 +18,8 @@ function addToArray() {
         return false;
     } else {
     var temp = document.getElementById('restinput').value;
-    array.push(temp);
+    temp = temp.replace(/(<([^>]+)>)/gi, "");
+    array.push(temp); 
     x++;
     document.getElementById('restinput').value = "";
     }

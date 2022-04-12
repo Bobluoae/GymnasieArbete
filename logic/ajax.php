@@ -6,7 +6,7 @@ if ($_GET["ajax"] == "savelist") {
 
 	if (isset($_SESSION["user_id"])) {
 		$query = $conn->prepare("INSERT INTO lists SET list_name = ?, user_id = ?");
-		$query->bindParam('1', $payload->listname, PDO::PARAM_STR);
+		$query->bindParam('1', htmlentities($payload->listname), PDO::PARAM_STR);
 		$query->bindParam('2', $_SESSION["user_id"], PDO::PARAM_INT);
 		$query->execute();
 
@@ -14,7 +14,7 @@ if ($_GET["ajax"] == "savelist") {
 
 		foreach ($payload->restaurants as $restaurant) {
 			$query = $conn->prepare("INSERT INTO list_items SET rest_name = ?, list_id = ?");
-			$query->bindParam('1', $restaurant, PDO::PARAM_STR);
+			$query->bindParam('1', htmlentities($restaurant), PDO::PARAM_STR);
 			$query->bindParam('2', $list_id, PDO::PARAM_INT);
 			$query->execute();
 		}
