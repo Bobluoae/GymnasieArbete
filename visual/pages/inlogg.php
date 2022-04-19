@@ -23,7 +23,7 @@
 					<h2 id="username-password-inlog-text">Hello, <?=$_SESSION["username"]?>!</h2>
 					<form method="POST">
 						<input type="hidden" name="utlogg_skickat">
-						<input id="logg-in-ut" type="submit" name="logga_ut" value="Logga ut">
+						<input class="button" id="logg-in-ut" type="submit" name="logga_ut" value="Logga ut">
 					</form>
 
 				<?php } ?>

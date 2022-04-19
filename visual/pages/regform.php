@@ -17,7 +17,7 @@
 						<input id="username-password-input" type="password" name="password"><br>
 						<label id="username-password-inlog-text">Comfirm password</label><br>
 						<input id="username-password-input" type="password" name="confirm_password"><br>
-						<input id="logg-in-ut" type="submit" name="register" value="Registrera"><br>
+						<input class="button" id="logg-in-ut" type="submit" name="register" value="Registrera"><br>
 					</form>
 				<?php } else { ?>
 					<h2 id='gay-error'>Hello, <?=$_SESSION["username"]?>! You should not be here...</h2>

@@ -47,6 +47,13 @@ background-color: black;
 color: white;
 text-align: center;
 }
+
+.button{/* Css code for multible buttons */
+color: white;
+background: rgba(52, 52, 52);
+border-radius: 5px;
+cursor: pointer;
+}
 /* ////////// End of all page code ////////// */
 
 
@@ -73,14 +80,24 @@ cursor: pointer;
 
 
 
-.circle { /* Kod som gör så det "Home" knappen är inuti en cirkel */
-width: 150px;
+.circle{ /* Kod som gör så det "Home" knappen är inuti en cirkel */
+min-width: 250px;
 height: 100px;
 line-height: 45px;
-border-radius: 50px;
+border-radius: 60px;
 font-size: 20px;
-color: #fff;
-background: white;
+background: rgba(40, 40, 40, 0.9);
+text-decoration: none;
+border: 2px solid blue;
+}
+
+.circle a{
+color: white;
+}
+
+.circle a:hover{
+text-decoration: underline;
+color: black;
 }
 
 #coolid{ /* Kod som gör så att cirkel befinner sig i mitten av "main-header". */
@@ -105,13 +122,6 @@ width: 40%;
 min-width: 300px;
 height: 300px;
 border-radius: 20px;
-}
-
-#logg-in-ut{/* Css code for the "log-in" and "log-out" button on the login page */
-color: white;
-background: rgba(52, 52, 52);
-border-radius: 5px;
-cursor: pointer;
 }
 
 #username-password-inlog-text{/* Css code for the username, password and register text on the login page */
@@ -201,32 +211,11 @@ background-color: rgba(210, 210, 210);
 margin: 10px;
 }
 
-#add{/* Code for the add button on the "Edit Restaurants" page */
-color: white;
-background: rgba(52, 52, 52);
-border-radius: 5px;
-cursor: pointer;
-}
-
-#skola{
-color: white;
-background: rgba(52, 52, 52);
-border-radius: 5px;
-cursor: pointer;
-}
-
-#reset{/* Code for the clear button on the "Edit Restaurants" page */
-color: white;
-background: rgba(52, 52, 52);
-border-radius: 5px;
-cursor: pointer;
-}
-
 #error{/* Code that makes the error message that pops up on "Edit Restaurants" page to turn red */
 color: rgba(255, 0, 0);
 }
 
-.error2::-webkit-input-placeholder{
+.error2::-webkit-input-placeholder{/* code */
 color: rgba(255, 0, 0);
 }
 /* ////////// End of resturant page code ////////// */
@@ -240,6 +229,15 @@ margin: 20px;
 width: 40%;
 height: 100px;
 color: limegreen;
+}
+
+#list_id{
+text-align: center;
+max-width: 150px;
+border-radius: 5px;
+color: black;
+background-color: rgba(210, 210, 210);
+margin: 10px;
 }
 
 @media screen and(max-width:900px){

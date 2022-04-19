@@ -26,7 +26,7 @@
             <?php
             }?>
             </select>
-            <input type="submit" value="Choose list">
+            <input class="button" type="submit" value="Choose list">
           </form>   
         <?php
         $arr = [];
@@ -39,10 +39,10 @@
           while($rest = $query->fetch(PDO::FETCH_OBJ)) {
             $arr[] .= $rest->rest_name;
           }?>
-          <button id="random" onclick="picker()">Randomize</button><br>
+          <button class="button" id="random" onclick="picker()">Randomize</button><br>
          <?php
         }?>
-        <button id="skola" onclick="skolas()">skola</button><br>
+        <button class="button" id="skola" onclick="skolas()">School List</button><br>
         <p id="listArray"></p>
       </div>
       <div id="list_edit">
